@@ -1,3 +1,21 @@
+<?php
+$floatNumbers = [1.23, 2.34, 3.45, 4.56, 5.67];
+$wholeNumbers = [1, 2, 3, 4, 5];
+
+$results = [
+    "Round" => round($floatNumbers[0]),
+    "Ceil" => ceil($floatNumbers[1]),
+    "Floor" => floor($floatNumbers[2]),
+    "Max" => max($wholeNumbers),
+    "Min" => min($wholeNumbers),
+    "Sin" => sin($wholeNumbers[1]),
+    "Cos" => cos($wholeNumbers[2]),
+    "Abs" => abs(-10),
+    "Pow" => pow($wholeNumbers[3], 2),
+    "Sqrt" => sqrt($wholeNumbers[4])
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,43 +25,12 @@
 </head>
 <body>
     <h1>Math Functions</h1>
-    <ul id="mathResults"></ul>
-
-    <a href="javascript:void(0);" onclick="closeAndGoBack()">Back to Main Page</a>
-
-    <script>
-        // JavaScript arrays equivalent to your PHP arrays
-        const floatNumbers = [1.23, 2.34, 3.45, 4.56, 5.67];
-        const wholeNumbers = [1, 2, 3, 4, 5];
-
-        // JavaScript object to store the results of various math functions
-        const results = {
-            "Round": Math.round(floatNumbers[0]),
-            "Ceil": Math.ceil(floatNumbers[1]),
-            "Floor": Math.floor(floatNumbers[2]),
-            "Max": Math.max(...wholeNumbers),
-            "Min": Math.min(...wholeNumbers),
-            "Sin": Math.sin(wholeNumbers[1]),
-            "Cos": Math.cos(wholeNumbers[2]),
-            "Abs": Math.abs(-10),
-            "Pow": Math.pow(wholeNumbers[3], 2),
-            "Sqrt": Math.sqrt(wholeNumbers[4])
-        };
-
-        // Display the results in the <ul> element
-        const resultsList = document.getElementById("mathResults");
-        for (const [functionName, result] of Object.entries(results)) {
-            const listItem = document.createElement("li");
-            listItem.textContent = `${functionName}: ${result}`;
-            resultsList.appendChild(listItem);
-        }
-
-        // Function to navigate back to the main page
-        function closeAndGoBack() {
-            window.close();
-            window.location.href = "index.html"; // Updated file name
-        }
-    </script>
+    <ul>
+        <?php foreach ($results as $function => $result) {
+            echo "<li>$function: $result</li>";
+        } ?>
+    </ul>
+    <a href="index.html">Back to Main Page</a>
 </body>
 </html>
 
