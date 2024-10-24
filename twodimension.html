@@ -226,5 +226,15 @@ list($rowMin, $rowMax, $colMin, $colMax) = findMinMaxInRowsAndColumns($array, $n
     <h2>Overall Sum and Average</h2>
     <p><strong>Overall Sum of Array:</strong> <?php echo $overallSum; ?></p>
     <p><strong>Overall Average of Array:</strong> <?php echo round($overallAverage, 2); ?></p>
+
+    <a href="index.html">Back to Main Page</a>
+
+    <script>
+        function closeAndGoBack() {
+            window.close(); 
+            window.location.href = "index.html";
+        }
+    </script>
+    
 </body>
 </html>
