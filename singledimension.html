@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #009879;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #007f65;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ten People's Information</h1>
+
+    <!-- Unsorted List -->
+    <h2>Unsorted List</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Nationality</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Nino John</td><td>25</td><td>Male</td><td>American</td></tr>
+            <tr><td>Janelle</td><td>30</td><td>Female</td><td>British</td></tr>
+            <tr><td>Cath</td><td>22</td><td>Female</td><td>Canadian</td></tr>
+            <tr><td>Jasper</td><td>28</td><td>Male</td><td>Australian</td></tr>
+            <tr><td>Sheina</td><td>26</td><td>Male</td><td>French</td></tr>
+            <tr><td>Ysha</td><td>24</td><td>Male</td><td>German</td></tr>
+            <tr><td>Don</td><td>29</td><td>Female</td><td>Spanish</td></tr>
+            <tr><td>Menzi Ann</td><td>31</td><td>Male</td><td>Italian</td></tr>
+            <tr><td>Kinneth</td><td>27</td><td>Male</td><td>Russian</td></tr>
+            <tr><td>Harddy</td><td>23</td><td>Female</td><td>Chinese</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Sorted List -->
+    <h2>Sorted List (By Name)</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Nationality</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Cath</td><td>22</td><td>Female</td><td>Canadian</td></tr>
+            <tr><td>Don</td><td>29</td><td>Female</td><td>Spanish</td></tr>
+            <tr><td>Harddy</td><td>23</td><td>Female</td><td>Chinese</td></tr>
+            <tr><td>Janelle</td><td>30</td><td>Female</td><td>British</td></tr>
+            <tr><td>Jasper</td><td>28</td><td>Male</td><td>Australian</td></tr>
+            <tr><td>Kinneth</td><td>27</td><td>Male</td><td>Russian</td></tr>
+            <tr><td>Menzi Ann</td><td>31</td><td>Male</td><td>Italian</td></tr>
+            <tr><td>Nino John</td><td>25</td><td>Male</td><td>American</td></tr>
+            <tr><td>Sheina</td><td>26</td><td>Male</td><td>French</td></tr>
+            <tr><td>Ysha</td><td>24</td><td>Male</td><td>German</td></tr>
+        </tbody>
+    </table>
+
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>
+
